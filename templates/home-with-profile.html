@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %}
+{% block page_content %}
+
+    <h1>My Notes</h1>
+
+
+    {% for note in notes %}
+        <div class="note-container">
+            <h2> {{ note.title }}&nbsp&nbspCreated:{{ note.create_date|date:"m.d.y H:i" }} <img src="{{ note.image_url }}" alt="note"></h2>
+
+
+            <div class="right">
+                <a class="button details" href="{% url 'details note' note.pk %}">Details</a>
+                <a class="button edit" href="{% url 'edit note' note.pk %}">Edit</a>
+                <a class="button delete" href="{% url 'delete note' note.pk %}">Delete</a>
+            </div>
+
+        </div>
+    {% empty %}
+        <h2>There are no notes.</h2>
+    {% endfor %}
+
+    <!--end notes container-->
+{% endblock %}

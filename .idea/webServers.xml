@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f0ed1bda-eadd-43a5-9aed-10e55fe3dc7c" name="78.128.43.50">
+        <fileTransfer accessType="SFTP" host="78.128.43.50" port="6543" sshConfigId="fe6dd773-2a68-48fc-bc69-accb52ce75fa" sshConfig="bogitest@78.128.43.50:6543 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
